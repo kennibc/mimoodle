@@ -335,17 +335,12 @@ function theme_mimoodle_set_customcss($css, $customcss) {
     return $css;
 }
 
-/*function theme_mimoodle_page_init(moodle_page $page) {
+function theme_mimoodle_page_init(moodle_page $page) {
     $page->requires->jquery();
-    $page->requires->jquery_plugin('cslider', 'theme_mimoodle');
-    $page->requires->jquery_plugin('custom', 'theme_mimoodle'); 
-    $page->requires->jquery_plugin('alert', 'theme_mimoodle');
-    $page->requires->jquery_plugin('carousel', 'theme_mimoodle');
-    $page->requires->jquery_plugin('collapse', 'theme_mimoodle');
-    $page->requires->jquery_plugin('modal', 'theme_mimoodle');
-    $page->requires->jquery_plugin('scrollspy', 'theme_mimoodle');
-    $page->requires->jquery_plugin('tab', 'theme_mimoodle');
-    $page->requires->jquery_plugin('tooltip', 'theme_mimoodle');
-    $page->requires->jquery_plugin('transition', 'theme_mimoodle');
-    $page->requires->jquery_plugin('modernizr', 'theme_mimoodle');  
-}*/
+$page->requires->jquery_plugin('tab', 'theme_mimoodle');
+$page->requires->jquery_plugin('modal', 'theme_mimoodle');
+$page->requires->jquery_plugin('tooltip', 'theme_mimoodle');
+$page->requires->jquery_plugin('transition', 'theme_mimoodle');
+$page->requires->jquery_plugin('collapse', 'theme_mimoodle');
+$page->requires->jquery_plugin('modernizr', 'theme_mimoodle');
+}
