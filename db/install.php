@@ -42,6 +42,6 @@ function xmldb_theme_mimoodle_install() {
     $filerecord->filearea  = 'backgroundimage';
     $filerecord->filepath  = '/';
     $filerecord->itemid    = 0;
-    $filerecord->filename  = 'background.jpg';
-    $fs->create_file_from_pathname($filerecord, $CFG->dirroot . '/theme/mimoodle/pix/background.jpg');
+    $filerecord->filename  = 'background.png';
+    $fs->create_file_from_pathname($filerecord, $CFG->dirroot . '/theme/mimoodle/pix/background.png');
 }

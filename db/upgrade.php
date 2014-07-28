@@ -48,8 +48,8 @@ function xmldb_theme_mimoodle_upgrade($oldversion) {
             $filerecord->filearea  = 'backgroundimage';
             $filerecord->filepath  = '/';
             $filerecord->itemid    = 0;
-            $filerecord->filename  = 'background.jpg';
-            $fs->create_file_from_pathname($filerecord, $CFG->dirroot . '/theme/mimoodle/pix/background.jpg');
+            $filerecord->filename  = 'background.png';
+            $fs->create_file_from_pathname($filerecord, $CFG->dirroot . '/theme/mimoodle/pix/background.png');
         }
 
         upgrade_plugin_savepoint(true, 2014032400, 'theme', 'mimoodle');
@@ -61,12 +61,13 @@ function xmldb_theme_mimoodle_upgrade($oldversion) {
         // Set the default settings as they might already be set.
         set_config('textcolor', '#3d3d3d', 'theme_mimoodle');
         set_config('linkcolor', '#415FFB', 'theme_mimoodle');
-        set_config('backgroundrepeat', 'repeat', 'theme_mimoodle');
+        set_config('backgroundrepeat', 'repeat-x', 'theme_mimoodle');
+	set_config('backgroundposition', 'left_bottom', 'theme_mimoodle');
         set_config('contentbackground', '#FFFFFF', 'theme_mimoodle');
-        set_config('secondarybackground', '#C2CBD6', 'theme_mimoodle');
-	set_config('bodybackground', '#E1E5EA', 'theme_mimoodle');
+        set_config('secondarybackground', '#CAD9E8', 'theme_mimoodle');
+	set_config('bodybackground', '#FFFBFF', 'theme_mimoodle');
         set_config('invert', 1, 'theme_mimoodle');
-        set_config('backgroundimage', '/background.jpg', 'theme_mimoodle');
+        set_config('backgroundimage', '/background.png', 'theme_mimoodle');
 
         upgrade_plugin_savepoint(true, 2014032401, 'theme', 'mimoodle');
     }

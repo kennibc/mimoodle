@@ -139,7 +139,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_mimoodle/secondarybackground';
     $title = get_string('secondarybackground', 'theme_mimoodle');
     $description = get_string('secondarybackground_desc', 'theme_mimoodle');
-    $default = '#C2CBD6';
+    $default = '#CAD9E8';
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, null, false);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
@@ -147,7 +147,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_mimoodle/bodybackground';
     $title = get_string('bodybackground', 'theme_mimoodle');
     $description = get_string('bodybackground_desc', 'theme_mimoodle');
-    $default = '#E1E5EA';
+    $default = '#FFFBFF';
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, null, false);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
@@ -164,7 +164,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_mimoodle/backgroundrepeat';
     $title = get_string('backgroundrepeat', 'theme_mimoodle');
     $description = get_string('backgroundrepeat_desc', 'theme_mimoodle');;
-    $default = 'repeat';
+    $default = 'repeat-x';
     $choices = array(
         '0' => get_string('default'),
         'repeat' => get_string('backgroundrepeatrepeat', 'theme_mimoodle'),
@@ -180,7 +180,7 @@ defined('MOODLE_INTERNAL') || die;
     $name = 'theme_mimoodle/backgroundposition';
     $title = get_string('backgroundposition', 'theme_mimoodle');
     $description = get_string('backgroundposition_desc', 'theme_mimoodle');
-    $default = '0';
+    $default = 'left_bottom';
     $choices = array(
         '0' => get_string('default'),
         'left_top' => get_string('backgroundpositionlefttop', 'theme_mimoodle'),
